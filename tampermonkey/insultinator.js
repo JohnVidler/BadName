@@ -7,6 +7,7 @@
 // @match        
 // @grant        none
 // @require http://code.jquery.com/jquery-latest.js
+// @updateURL https://raw.githubusercontent.com/JohnVidler/BadName/master/tampermonkey/insultinator.js
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';

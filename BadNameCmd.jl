@@ -8,10 +8,20 @@ function main(args)
     "word"
       help = "A word to check."
       required = true
+    "--db"
+      help = "A CSV file containing <word>,<language>,<meaning>"
+      required = false
   end
 
   parsed_args = parse_args(args, argparser)
-  results = badname(parsed_args["word"])
+
+  if parsed_args["db"] != nothing
+    altdb = init(parsed_args["db"])
+    results = badname(parsed_args["word"], altdb)
+  else
+    results = badname(parsed_args["word"])
+  end
+
   if results == nothing
     println("No results.")
   else

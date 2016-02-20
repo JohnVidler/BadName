@@ -23,3 +23,7 @@ badname("Peter")
 ```
 
 Now you can have full control over whether to send Peter to Sweden!
+
+## Prerequisites 
+
+The `Phonetics` library [available here](https://github.com/Betawolf/Phonetics.jl)

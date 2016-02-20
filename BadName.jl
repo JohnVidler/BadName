@@ -78,5 +78,5 @@ function print_result(d)
   end
 end
 
-export badname, print_result
+export badname, print_result, init
 end

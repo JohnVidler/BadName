@@ -19,7 +19,7 @@ end
 function init(dbfile)
   data = readcsv(dbfile)
 
-  collen = round(Int, length(data)/4)
+  collen = size(data)[1]
 
   lookup = Dict{ASCIIString, Any}([(data[i], Dict("word"=>data[i], "language"=>data[collen+i], "meaning"=>data[2*collen+i], "permissive"=>false)) for i in 1:collen])
 
